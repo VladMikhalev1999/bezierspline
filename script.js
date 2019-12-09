@@ -66,8 +66,7 @@ function draw_text(context, points) {
                 }
             }
 
-function beziers_process_function(canvas) {
-	    let context = canvas.getContext("2d");
+function beziers_process_function(canvas, context) {
             let mx = 0, my = 0;
             let pIndex = -1;
             canvas.addEventListener("mousedown", e => {
