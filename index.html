@@ -13,7 +13,8 @@
     <canvas id="beziers" style="border: 1px solid black" width="1200" height="600">
         <script>
 	    let beziers = document.getElementById("beziers");
-	    beziers_process_function(beziers);
+	    let beziers_context = beziers.getContext("2d");
+	    beziers_process_function(beziers, beziers_context);
         </script>
     </canvas>
 </body>
